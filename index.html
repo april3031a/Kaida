@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凱達國際 | Kaida</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+ 
+    <link rel="stylesheet" href="./css/animate.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+  
+  $(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+    $(function(){ $('#A4').click(function(){ //點擊此選擇器
+        $('html,body').animate({scrollTop:$('#content4').offset().top-60 }, 'slow'); //滑到此區
+        });  
+    }); 
+});
+
+    
+
+  $(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+    $(function(){ $('#A1').click(function(){ //點擊此選擇器
+        $('html,body').animate({scrollTop:$('#content0').offset().top-60 }, 'slow'); //滑到此區
+        });  
+    }); 
+});
+
+$(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+    $(function(){ $('#A2').click(function(){ 
+        $('html,body').animate({scrollTop:$('#content2').offset().top -60}, 'slow'); 
+        });  
+    }); 
+});
+
+
+$(document).ready(function(){//使用JQ語法，JQ ready的function是必要的
+    $(function(){ $('#A3').click(function(){ //點擊此選擇器
+        $('html,body').animate({scrollTop:$('#content3').offset().top-60 }, 'slow'); //滑到此區
+        });  
+    }); 
+});
+
+
+      
+      $(function() {
+                $(window).scroll(function() {
+                  if ($(this).scrollTop() > 10)  {          /* 要滑動到選單的距離 */
+                     $('#menu1').addClass('navFixed');   /* 幫選單加上固定效果 */
+                  } else {
+                    $('#menu1').removeClass('navFixed'); /* 移除選單固定效果 */
+                  }
+                });
+              });
+       
+          </script>
+      <style>
+              .navFixed {
+               z-index: 10;         
+                position: fixed;      
+                top: 0;
+                left: 0;
+                margin-top: 0;
+                min-width: 100%;
+                /* opacity: 0.94; */
+                transition: opacity .5s ease-out; 
+                  
+              }
+              </style>
+      
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('html, body').scroll(function() {
+         
+        });
+      });
+          $(function() {
+      
+              /* 按下GoTop按鈕時的事件 */
+              $('#gotop').click(function(){
+                  $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                  return false;
+              });
+              
+              /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+              $(window).scroll(function() {
+                  if ( $(this).scrollTop() > 400){
+                      $('#gotop').fadeIn();
+                  } else {
+                      $('#gotop').fadeOut();
+                  }
+              });
+          });
+          </script> 
+      
+
+ 
+</head>
+
+
+<body>
+    
+<header class="header">
+<nav class="navbar navbar-expand-lg navbar-dark" id="menu1" style="background: darkblue ">
+    <div class="container">
+        <a class="navbar-brand  " href="index.html" style="font-size:25px ; " > 
+            <img src="./img/KAIDA LOGO.png" alt="" width="45" height="45">
+            凱達國際 | Kaida</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: auto;" >
+                
+            <ul class="navbar-nav mr-auto active" >
+                <li class="nav-item " id="A1" >
+                    <a class="nav-link nav-new" href="#content0" > <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="A2" >
+                    <a class="nav-link nav-sv" href="#content2" ><span
+                        class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="A3">
+                    <a class="nav-link nav-brand" href="#content3" ></a>
+                </li>
+                <li class="nav-item" id="A4">
+                    <a class="nav-link nav-us" href="#content4" ></a>
+                </li>
+       
+            </ul>
+
+        </div>
+    </div>
+
+</nav>
+                
+
+</header>
+
+<!-- <div class="container my-3">
+    <div class="row">
+         <div class="col-12">  -->
+         
+
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" style="padding-top: 50px;">
+                        <div class="carousel-inner" >
+                          <div class="carousel-item active" data-interval="10000" >
+                            <img src="img/banner3.jpg" class="d-block w-100 h-100" alt="...">
+                          </div>
+                          <div class="carousel-item" data-interval="20000" >
+                         
+                             <img src="img/banner2.jpg" class="d-block w-100 h-100" alt="..."></div>
+                         
+                          <div class="carousel-item" data-interval="30000" >
+                            <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    
+<!-- part1 -->
+
+
+    
+
+<div style="background: rgb(226, 226, 226);" id="content0">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-3  ">
+            <br>
+            <h1 class="wow fadeInDown">About us</h1>
+        </div>
+        <div class="col-12 col-lg-9 wow fadeIn" data-wow-delay="0.4s">
+            <br><br>
+            <img src="./img/KAIDA LOGO.png" alt class=""  style="   width:auto;
+            height:auto;
+            max-width:50%;
+            max-height:50%;
+               object-position: center; " >
+            <br><br><br><br>
+            <h2>凱達國際 | Kaida International Enterprise Co.</h2>
+            <br>
+
+            <p>我們尋求長期的業務關係，並通過提供韓國品牌化妝品努力滿足客戶的需求。 <br>
+                憑藉我們專業可靠的服務和準時交貨，我們還能夠以合理的價格提供各種產品。<br>
+                在這段時間裡，我們與許多國家/地區的客戶建立了密切的關係，<br>
+                而我們的首要任務始終是盡可能獲得最佳的客戶滿意度。<br>
+                <br><br>     
+                
+                我們期待與您的公司建立良好的合作夥伴關係。</p>
+    
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- part2 -->
+
+<div class="text-white" style="background:rgb(32, 32, 99)" id="content2">   
+     <div
+      class=" wow fadeInDown" style="text-align: center; text-shadow: 0px 0px 10px black;"><h1>Our Service | 我們的服務</h1></div>
+
+
+     
+    <div class="container">
+        
+    <div class="row"style="margin-top: 100px; margin-bottom:50px;" >
+      
+        <div class="col-12 col-lg-3 wow zoomIn " style="text-align: center; " data-wow-delay="0">
+            <img src="./img/IC-3.png" alt="" style="width:89px;height:88px;object-fit:cover;">
+            <h3 style="text-align: center; margin-top: auto; ">  回覆快速<br>Fast Feedback</h3>
+        </div>
+
+        <div class="col-12 col-lg-3 wow zoomIn"  style="text-align: center; " data-wow-delay="0.2s">
+            <img src="./img/IC-1.png" alt="" style="width:89px;height:88px;object-fit:cover;">
+            <h3 style="text-align: center; ">最優惠的價格<br> TheBestPrice</h3>
+       
+        </div>
+        <div class="col-12 col-lg-3 wow zoomIn " style="text-align: center; " data-wow-delay="0.4s">
+            <img src="./img/IC-2.png" alt="" style="height:88px;object-fit:cover;">
+            <h3 style="text-align: center;">最好的品質 <br> TheBestQuality</h3>
+           
+      
+        </div>
+        <div class="col-12 col-lg-3 wow zoomIn"  style="text-align: center;" data-wow-delay="0.6s">  
+            <img src="./img/IC-4.png" alt="" style="width:89px;height:88px;object-fit:cover;"> 
+            <h3 style="text-align: center;  ">準時送達 <br> OnTimeDelivery</h3>
+            
+         </div>
+        </div></div>
+</div>
+
+
+<!-- part3 -->
+<div class="text-black" id="content3" style="background-color: rgb(197, 197, 197, 0.5);">
+    <div class=" wow fadeInDown" style="text-align: center; color: rgb(255, 255, 255); margin-bottom: 50px; text-shadow:0px 0px 15px #333;"><h1>Brands | 提供品牌</h1></div>
+
+
+        <div class="rotate-box-1-wrapper" style="margin-bottom: 100px;">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn " data-wow-delay="0" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></i></span>
+                            <div class="rotate-box-info" >
+                              
+                                <p style="font-size: 28px;"> 
+                                    我的心機
+                                   </p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="col-md-4 col-sm-6 col-lg-2" >
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn " data-wow-delay="0.2s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></i></span>
+                            <div class="rotate-box-info" >
+                  
+                                <p style="font-size: 25px;"> 
+                                 我的美麗日記
+                                   </p>
+
+                            </div>
+                        </a>
+                    </div>
+
+    
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn " data-wow-delay="0.4s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></i></span>
+                            <div class="rotate-box-info" >
+                                <p style="font-size: 28px;"> sexylook 極美肌</p>
+
+                            </div>
+                        </a>
+                    </div>
+    
+                    
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="0.6s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                                <p style="font-size: 28px;">  森田藥妝</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="0.8s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                                <p style="font-size: 25px;"> 未來美8分鐘</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" style=" padding-top: 10px;">
+                                <p style="font-size: 28px;"> 牛爾</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+            
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.1s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" style="padding-top: 10px;" >
+                                <p style="font-size: 25px;"> 自白肌</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+               
+
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.2s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" style="padding-top: 10px;">
+                                <p style="font-size: 25px;"> 廣源涼</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+               
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.3s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                                <p style="font-size: 28px;"> 雅漾</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.4s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                                <p style="font-size: 28px;"> 花王</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.5s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                                <p style="font-size: 28px;"> 理膚寶水</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-2">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.6s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                               <p style="font-size: 30px;"> SK2</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.7s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                               <p style="font-size: 30px;"> YSL</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.8s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                               <p style="font-size: 30px;"> CHANEL
+                               </p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="1.9s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                               <p style="font-size: 30px;"> 
+                                MAC
+                               </p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="2s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                               <p style="font-size: 28px;"> 
+                                VERSACE
+                              </p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="2.1s" style="text-decoration:none;">
+                            <span class="rotate-box-icon"><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info">
+                               <p style="font-size: 30px;"> 
+                                COACH
+                               </p>
+                            
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="2.2s" style="text-decoration:none;">
+                            <span class="rotate-box-icon"><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                               <p style="font-size: 30px;"> 
+                                BUBERRY
+                               </p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="2.3s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info">
+                                <p style="font-size: 28px;">HERMES</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-lg-3">
+                        <a href="#" class="rotate-box-1 square-icon wow fadeIn" data-wow-delay="2.4s" style="text-decoration:none;">
+                            <span class="rotate-box-icon" ><i class="fa fa-heart"></i></span>
+                            <div class="rotate-box-info" >
+                               <p style="font-size: 30px;">
+                                TOMFORD</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+
+                    
+       
+    </div>
+
+</div>
+ </div>
+ </div>
+</div>
+<!-- part4 -->
+
+
+<div class="text-white "  id="content4" style="background-image: linear-gradient(rgba(19, 64, 148, 0.8),rgba(24, 45, 90, 0.8)), url('./img/CITY.PNG');">
+    <div class="container">
+    <div class="row">
+      
+        <div class="col-12 col-lg-4"  style="background-color: rgba(13, 66, 116, 0.8); height: 150px;">
+            <br>
+            <h1 class="wow fadeInDown" style="margin-bottom: 100px;">Contact Us <br>聯繫我們 </h1>
+      
+       </div>
+        <div class="col-12 col-lg-8  wow bounceInRight" data-wow-delay="0.4s" style="margin-top: 50px; margin-bottom: 100px; ">
+       
+              
+     <h5 style="padding-bottom: 20px; "><i class="fas fa-phone-square-alt"></i> 公司電話：(04)2316-8563</h5>
+           
+            <h5 style="padding-bottom: 20px;"><i class="fab fa-line"></i> Line@Ides901015</h5>         
+            <h5 style="padding-bottom: 20px;"><i class="far fa-copy"></i> 傳真：82563180</h5>
+         <h5 style="padding-bottom: 20px;"><i class="fas fa-map-marker-alt"></i> 公司地址：台中市西屯區漢口路二段151號 15F 3-2</h5>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1836374065115!2d120.65954471536767!3d24.165291678715956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x112453f0739e658c!2z5ryi5Y-j5ZWG5qWt5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1578880376220!5m2!1szh-TW!2stw" width="80%" height="80%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+            
+
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+<!-- 底部 -->
+
+<div class="container-fluid bg-secondary " id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 align-self-center wow fadeIn">
+                <h1 class="text-white text-center" style="font-size: 20px">&copy;2020 凱達國際 | Kaida International Enterprise Co.</h1>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<a href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" id="gotop">
+    <i class="fa fa-angle-up"></i>
+ </a>
+
+ 
+<scrip src="http://code.jquery.com/jquery-3.3.1.js"></scrip>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/wow.min.js"></script>
+
+<!-- 要加入wow效果，須先加入此行 -->
+<script>
+    new WOW().init();
+</script>
+
+</body>
+
+</html>
